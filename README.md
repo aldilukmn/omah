@@ -1,0 +1,2 @@
+# omah
+Slicing from Codedesign

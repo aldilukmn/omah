@@ -19,7 +19,7 @@ body {
   align-items: center;
   display: flex;
   justify-content: space-between;
-  margin: 48px 8%;
+  margin: 48px 6% 48px 8%;
 }
 
 .logo a {
@@ -52,7 +52,7 @@ body {
 
 /* end header */
 
-/* start main */
+/* start hero */
 
 .header-text {
   align-items: center;
@@ -90,7 +90,7 @@ body {
 
 .image img {
   margin-top: 20px;
-  width: 90%;
+  width: 92.5%;
 }
 
 .image .card {
@@ -100,8 +100,8 @@ body {
   display: flex;
   justify-content: space-between;
   height: 112px;
-  margin-left: 28%;
-  margin-right: 10%;
+  margin-left: 30%;
+  margin-right: 7.5%;
   position: relative;
   top: -56px;
 }
@@ -138,7 +138,92 @@ body {
   padding: 26px 50px;
 }
 
+/* end hero */
+
+/* start sale house */
+
+.sale-house {
+  margin: 125px 8% 48px 8%;
+}
+
+.sale-house .title {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  text-transform: capitalize;
+}
+
+.title .title-left {
+  align-items: center;
+  display: flex;
+}
+
+.title-left > h1 {
+  font-weight: 500;
+  font-size: 40px;
+  margin-right: 30px;
+}
+
+.title-left > h4 {
+  cursor: pointer;
+  font-weight: 400;
+  font-size: 20px;
+  margin: 0 30px;
+}
+
+.title-left > h4:nth-of-type(1) {
+  color: var(--primary-color);
+}
+
+.title-right > h4 {
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 20px;
+  text-decoration: underline;
+}
+
+.sale-house .container {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  gap: 30px;
+  margin-top: 50px;
+}
+
+.container .card {
+  width: 100%;
+}
+
+.container .card img {
+  width: 100%
+}
+
+/* .container .card > span {
+  background-color: #ffffff;
+  color: var(--primary-color);
+  padding: 16px;
+  position: relative;
+  top: -45px;
+}
+
+.container .card > i {
+  background-color: #ffffff;
+  border-radius: 50%;
+  color: var(--primary-color);
+  font-size: 26px;
+  padding: 10px;
+  position: absolute;
+  top: -80%;
+  right: -250px;
+} */
+
+/* end sale house */
+
 @media screen and (max-width: 1400px) {
+  .navbar {
+    margin: 48px 5% 48px 8%;
+  }
+
   .header-text {
     margin: 88px 8% 48px 8%;
   }
@@ -157,7 +242,7 @@ body {
   }
 
   .image img {
-    width: 90%;
+    width: 92.5%;
   }
 
   .image .card {
@@ -320,7 +405,6 @@ body {
 }
 
 @media screen and (max-width: 768px) {
-
   .header-text h1 {
     font-size: 30px;
   }

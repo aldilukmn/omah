@@ -245,6 +245,63 @@ body {
 
 /* end sale house */
 
+/* start review */
+
+.review {
+  margin: 120px 7.5% 48px 7.5%;
+}
+
+.title-review {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  text-transform: capitalize;
+}
+
+.tr-left h1 {
+  font-weight: 500;
+  font-size: 40px;
+}
+
+.tr-right h4 {
+  font-weight: 500;
+  font-size: 20px;
+  text-decoration: underline;
+}
+
+.people-review {
+  display: flex;
+  gap: 30px;
+}
+
+.people-review .card {
+  width: 100%;
+}
+
+.people-review .card img {
+  width: 100%;
+}
+
+.people-review .image-name {
+  background-color: #ffffff;
+  bottom: 0;
+  color: var(--primary-color);
+  padding: 16px;
+  position: absolute;
+  text-transform: capitalize;
+}
+
+.image-name h6 {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.people-review .people-description {
+  margin-top: 30px;
+}
+
+/* end review  */
+
 @media screen and (max-width: 1400px) {
   .navbar {
     margin: 48px 5% 48px 8%;

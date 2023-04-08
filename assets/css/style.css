@@ -143,7 +143,7 @@ body {
 /* start sale house */
 
 .sale-house {
-  margin: 125px 8% 48px 8%;
+  margin: 50px 7.5% 48px 7.5%;
 }
 
 .sale-house .title {
@@ -187,7 +187,6 @@ body {
   justify-content: space-between;
   flex-direction: row;
   gap: 30px;
-  margin-top: 50px;
 }
 
 .container .card {
@@ -195,27 +194,54 @@ body {
 }
 
 .container .card img {
-  width: 100%
+  width: 100%;
 }
 
-/* .container .card > span {
-  background-color: #ffffff;
+.card .image {
+  position: relative;
+}
+
+.card .image-title span {
+  background-color: #fff;
+  bottom: 0;
   color: var(--primary-color);
   padding: 16px;
-  position: relative;
-  top: -45px;
+  position: absolute;
+  text-transform: capitalize;
 }
 
-.container .card > i {
+.card .image-title i {
   background-color: #ffffff;
   border-radius: 50%;
+  cursor: pointer;
   color: var(--primary-color);
-  font-size: 26px;
+  font-size: 20px;
   padding: 10px;
   position: absolute;
-  top: -80%;
-  right: -250px;
-} */
+  right: 10px;
+  top: 30px;
+}
+
+.card .description {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100px;
+  margin-top: 30px;
+}
+
+.description h3 {
+  font-size: 30px;
+  font-weight: 500;
+  margin-bottom: 10px;
+  text-transform: capitalize;
+}
+
+.description p:last-child {
+  color: var(--primary-color);
+  font-size: 24px;
+  margin-top: 10px;
+}
 
 /* end sale house */
 
@@ -304,6 +330,42 @@ body {
     font-size: 13px;
     margin-right: 16px;
     padding: 16px 30px;
+  }
+
+  .sale-house .title-left h1 {
+    font-size: 36px;
+    margin-right: 25px;
+  }
+
+  .sale-house .title-left h4 {
+    font-size: 18px;
+    margin: 0 25px;
+  }
+
+  .sale-house .title-right h4 {
+    font-size: 18px;
+  }
+
+  .card .image-title span {
+    font-size: 15px;
+    padding: 13px 16px;
+  }
+
+  .card .image-title i {
+    padding: 9px;
+    font-size: 18px;
+  }
+
+  .card .description h3 {
+    font-size: 26px;
+  }
+
+  .card .description p:nth-of-type(1) {
+    font-size: 14px;
+  }
+
+  .card .description p:last-child {
+    font-size: 20px;
   }
 }
 
@@ -402,6 +464,46 @@ body {
     margin-right: 16px;
     padding: 16px 20px;
   }
+
+  .sale-house {
+    margin: 50px 5% 48px 5%;
+  }
+
+  .sale-house .title-left h1 {
+    font-size: 32px;
+    margin-right: 20px;
+  }
+
+  .sale-house .title-left h4 {
+    font-size: 16px;
+    margin: 0 15px;
+  }
+
+  .sale-house .title-right h4 {
+    font-size: 16px;
+  }
+
+  .card .image-title span {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+
+  .card .image-title i {
+    padding: 7px;
+    font-size: 16px;
+  }
+
+  .card .description h3 {
+    font-size: 22px;
+  }
+
+  .card .description p:nth-of-type(1) {
+    font-size: 13px;
+  }
+
+  .card .description p:last-child {
+    font-size: 18px;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -422,6 +524,42 @@ body {
 
   .card .src-btn {
     padding: 12px 30px;
+  }
+
+  .sale-house .title-left h1 {
+    font-size: 28px;
+  }
+
+  .sale-house .title-left h4 {
+    font-size: 14px;
+    margin: 0 10px;
+  }
+
+  .sale-house .title-right h4 {
+    font-size: 14px;
+  }
+
+  .card .image-title span {
+    font-size: 12px;
+    padding: 7px 16px;
+  }
+
+  .card .image-title i {
+    padding: 7px;
+    font-size: 15px;
+    top: 28px;
+  }
+
+  .card .description h3 {
+    font-size: 19px;
+  }
+
+  .card .description p:nth-of-type(1) {
+    font-size: 13px;
+  }
+
+  .card .description p:last-child {
+    font-size: 18px;
   }
 }
 
@@ -449,5 +587,49 @@ body {
 
   .card .src-btn {
     padding: 10px 17px;
+  }
+
+  .sale-house .title-left h1 {
+    font-size: 24px;
+  }
+
+  .sale-house .title-left h4 {
+    font-size: 12px;
+    margin: 0 6px;
+  }
+
+  .sale-house .title-right h4 {
+    font-size: 12px;
+  }
+
+  .card .image-title span {
+    font-size: 10px;
+    padding: 3px 10px;
+  }
+
+  .card .image-title i {
+    padding: 7px;
+    font-size: 12px;
+    right: 5px;
+    top: 25px;
+  }
+
+  .card .description {
+    height: 90px;
+    margin-top: 17px;
+  }
+
+  .card .description h3 {
+    font-size: 16px;
+    margin-bottom: 0;
+  }
+
+  .card .description p:nth-of-type(1) {
+    font-size: 10px;
+  }
+
+  .card .description p:last-child {
+    font-size: 14px;
+    margin-top: 0;
   }
 }

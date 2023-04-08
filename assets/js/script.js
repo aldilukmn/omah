@@ -7,10 +7,19 @@ toggle.addEventListener("click", function () {
   bx.classList.toggle("bx-x");
 });
 
-const drop_down = document.getElementsByClassName("bx-chevron-down");
+const select = document.querySelectorAll(".drop-down div");
 
-Array.from(drop_down).forEach((drop) => {
-  drop.addEventListener("click", function () {
-    drop.classList.toggle("bx-chevron-right");
+Array.from(select).forEach((sel) => {
+  sel.addEventListener("click", function () {
+    const chevron = this.querySelector(".bx-chevron-down");
+    chevron.classList.toggle("bx-chevron-right");
+  });
+});
+
+const fa_regular = document.getElementsByClassName("fa-regular");
+
+Array.from(fa_regular).forEach((regular) => {
+  regular.addEventListener("click", function () {
+    regular.classList.toggle("fa-solid");
   });
 });

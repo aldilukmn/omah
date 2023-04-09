@@ -264,6 +264,7 @@ body {
 }
 
 .tr-right h4 {
+  cursor: pointer;
   font-weight: 500;
   font-size: 20px;
   text-decoration: underline;
@@ -274,7 +275,7 @@ body {
   gap: 30px;
 }
 
-.people-review .card {
+.people-review .card {  
   width: 100%;
 }
 
@@ -424,6 +425,18 @@ body {
   .card .description p:last-child {
     font-size: 20px;
   }
+
+  .tr-left h1 {
+    font-size: 36px;
+  }
+
+  .tr-right h4 {
+    font-size: 18px;
+  }
+
+  .people-description {
+    font-size: 14px;
+  }
 }
 
 @media screen and (max-width: 992px) {
@@ -522,7 +535,8 @@ body {
     padding: 16px 20px;
   }
 
-  .sale-house {
+  .sale-house,
+  .review {
     margin: 50px 5% 48px 5%;
   }
 
@@ -536,11 +550,13 @@ body {
     margin: 0 15px;
   }
 
-  .sale-house .title-right h4 {
+  .sale-house .title-right h4,
+  .tr-right h4 {
     font-size: 16px;
   }
 
-  .card .image-title span {
+  .card .image-title span,
+  .image .image-name {
     font-size: 14px;
     padding: 8px 16px;
   }
@@ -554,12 +570,17 @@ body {
     font-size: 22px;
   }
 
-  .card .description p:nth-of-type(1) {
+  .card .description p:nth-of-type(1),
+  .people-description {
     font-size: 13px;
   }
 
   .card .description p:last-child {
     font-size: 18px;
+  }
+
+  .tr-left h1 {
+    font-size: 32px;
   }
 }
 
@@ -583,7 +604,8 @@ body {
     padding: 12px 30px;
   }
 
-  .sale-house .title-left h1 {
+  .sale-house .title-left h1,
+  .tr-left h1 {
     font-size: 28px;
   }
 
@@ -592,7 +614,8 @@ body {
     margin: 0 10px;
   }
 
-  .sale-house .title-right h4 {
+  .sale-house .title-right h4,
+  .tr-right h4 {
     font-size: 14px;
   }
 
@@ -617,6 +640,14 @@ body {
 
   .card .description p:last-child {
     font-size: 18px;
+  }
+
+  .image .image-name {
+    padding: 7px 12px;
+  }
+
+  .image-name h6 {
+    font-size: 12px;
   }
 }
 
@@ -688,5 +719,26 @@ body {
   .card .description p:last-child {
     font-size: 14px;
     margin-top: 0;
+  }
+
+  .tr-left h1 {
+    font-size: 20px;
+  }
+  
+  .tr-right h4 {
+    font-size: 12px;
+  }
+
+  .image .image-name {
+    padding: 3px 10px;
+  }
+
+  .image-name h6 {
+    font-size: 10px;
+  }
+
+  .people-review .people-description {
+    font-size: 10px;
+    margin-top: 20px;
   }
 }

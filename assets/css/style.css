@@ -11,6 +11,7 @@
 
 body {
   font-family: "Poppins", sans-serif;
+  height: 100vh;
 }
 
 /* start header */
@@ -275,7 +276,7 @@ body {
   gap: 30px;
 }
 
-.people-review .card {  
+.people-review .card {
   width: 100%;
 }
 
@@ -302,6 +303,129 @@ body {
 }
 
 /* end review  */
+
+/* start blog   */
+
+.blog {
+  margin: 120px 7.5% 48px 7.5%;
+}
+
+.title-blog {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.tb-left > h1 {
+  font-size: 40px;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+
+.tb-right > h4 {
+  font-size: 20px;
+  font-weight: 400;
+  text-decoration: underline;
+}
+
+.content-blog {
+  display: flex;
+  justify-content: space-between;
+}
+
+.cb-left {
+  position: relative;
+  flex: 0.9;
+}
+
+.cb-left img {
+  height: 100%;
+  width: 90%;
+}
+
+.cb-left .cb-profile {
+  background-color: #ffffff;
+  bottom: 0;
+  padding: 10px 20px;
+  position: absolute;
+}
+
+.cb-profile .main-profile {
+  align-items: center;
+  display: flex;
+}
+
+.main-profile img {
+  margin-right: 10px;
+  width: 50%;
+}
+
+.main-profile .info-profile {
+  text-transform: capitalize;
+  width: 100%;
+}
+
+.info-profile h6 {
+  font-weight: 500;
+  font-size: 13px;
+}
+
+.info-profile p {
+  color: #828282;
+  font-weight: 500;
+  font-size: 10px;
+}
+
+.main-content {
+  margin-top: 30px;
+}
+
+.main-content h4 {
+  font-weight: 500;
+  font-size: 24px;
+}
+
+.main-content p {
+  color: #828282;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.cb-center {
+  display: flex;
+  flex: 0.4;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.cb-center .title {
+  display: flex;
+  flex-direction: column;
+  gap: 70px;
+}
+
+.cb-center .title h4 {
+  font-weight: 500;
+  font-size: 24px;
+}
+
+.cb-center .title p {
+  color: #828282;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.cb-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.cb-right .ac img {
+}
+
+/* end blog */
 
 @media screen and (max-width: 1400px) {
   .navbar {
@@ -724,7 +848,7 @@ body {
   .tr-left h1 {
     font-size: 20px;
   }
-  
+
   .tr-right h4 {
     font-size: 12px;
   }

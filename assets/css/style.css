@@ -11,16 +11,24 @@
 
 body {
   font-family: "Poppins", sans-serif;
-  height: 100vh;
 }
 
 /* start header */
+
+header {
+  background-color: #ffffff;
+  box-shadow: 0 3px 4px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
 
 .navbar {
   align-items: center;
   display: flex;
   justify-content: space-between;
-  margin: 48px 6% 48px 8%;
+  margin: 0 5.5% 0 7.5%;
+  padding: 25px 0;
 }
 
 .logo a {
@@ -224,11 +232,7 @@ body {
 }
 
 .card .description {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  height: 100px;
-  margin-top: 30px;
+  margin-top: 40px;
 }
 
 .description h3 {
@@ -314,7 +318,7 @@ body {
   align-items: center;
   display: flex;
   justify-content: space-between;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
 }
 
 .tb-left > h1 {
@@ -432,11 +436,90 @@ body {
 
 /* end blog */
 
-@media screen and (max-width: 1400px) {
-  .navbar {
-    margin: 48px 5% 48px 8%;
-  }
+/* start subscribe */
 
+.subscribe {
+  align-items: center;
+  background-color: var(--primary-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 200px;
+  margin-left: 7.5%;
+  padding: 0 23%;
+  padding-top: 100px;
+  text-align: center;
+}
+
+.subs-title h1 {
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 48px;
+}
+
+.subs-input {
+  align-items: center;
+  display: flex;
+  margin-top: 50px;
+  padding-bottom: 100px;
+  width: 100%;
+}
+
+.subs-input input {
+  border: none;
+  height: 90px;
+  padding-left: 30px;
+  width: 700px;
+}
+
+.subs-input input:focus {
+  outline-color: rgba(0, 0, 0, 0);
+}
+
+.subs-input p {
+  background-color: var(--primary-color);
+  cursor: pointer;
+  color: #ffffff;
+  font-size: 16px;
+  margin-left: -170px;
+  padding: 20px 40px;
+  text-align: center;
+}
+
+.subs-input input::placeholder {
+  font-size: 16px;
+}
+
+/* end subscribe */
+
+/* start footer */
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 200px;
+  padding: 40px 7.5%;
+}
+
+footer .title h5 {
+  color: #828282;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+footer i {
+  cursor: pointer;
+  color: var(--primary-color);
+  font-size: 30px;
+}
+
+footer i:not(.bxl-twitter) {
+  margin-right: 20px;
+}
+
+/* end footer */
+
+@media screen and (max-width: 1400px) {
   .header-text {
     margin: 88px 8% 48px 8%;
   }
@@ -528,6 +611,50 @@ body {
 
   .other-content .title-content h4 {
     font-size: 22px;
+  }
+
+  .subscribe {
+    padding-top: 90px;
+    margin-top: 170px;
+  }
+
+  .subs-input {
+    padding-bottom: 90px;
+  }
+
+  .subs-title h1 {
+    font-size: 44px;
+  }
+
+  .subs-input input {
+    height: 70px;
+    padding-left: 25px;
+  }
+
+  .subs-input p {
+    font-size: 15px;
+    margin-left: -153px;
+    padding: 14px 34px;
+  }
+
+  .subs-input input::placeholder {
+    font-size: 14px;
+  }
+
+  footer {
+    margin-top: 160px;
+  }
+
+  footer .title h5 {
+    font-size: 16px;
+  }
+
+  footer i {
+    font-size: 26px;
+  }
+
+  footer i:not(.bxl-twitter) {
+    margin-right: 15px;
   }
 }
 
@@ -656,18 +783,62 @@ body {
   .other-content .title-content p {
     font-size: 14px;
   }
+
+  .subscribe {
+    padding-top: 80px;
+    margin-top: 160px;
+  }
+
+  .subs-input {
+    padding-bottom: 80px;
+  }
+
+  .subs-title h1 {
+    font-size: 38px;
+  }
+
+  .subs-input input {
+    height: 60px;
+    padding-left: 23px;
+  }
+
+  .subs-input p {
+    font-size: 14px;
+    margin-left: -146px;
+    padding: 11px 34px;
+  }
+
+  .subs-input input::placeholder {
+    font-size: 12px;
+  }
+
+  footer {
+    margin-top: 140px;
+    padding: 30px 7.5%;
+  }
+
+  footer .title h5 {
+    font-size: 13px;
+  }
+
+  footer i {
+    font-size: 22px;
+  }
+
+  footer i:not(.bxl-twitter) {
+    margin-right: 10px;
+  }
 }
 
 @media screen and (max-width: 992px) {
   .navbar {
-    flex-direction: column;
-    margin: 48px 0;
+    background-color: #ffffff;
+    margin: 0;
   }
 
   .logo {
     align-self: start;
     margin-left: 5%;
-    margin-bottom: 10px;
   }
 
   .toggle {
@@ -676,17 +847,18 @@ body {
     font-size: 30px;
     position: absolute;
     margin-right: 5%;
-    top: 45px;
+    top: 27px;
     right: 0;
   }
 
   .menu {
     align-items: center;
-    background-color: var(--primary-color);
+    background-color: #ffffff;
     clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
     display: flex;
     flex-direction: column;
     justify-content: center;
+    margin-top: -15px;
     position: absolute;
     top: 100px;
     transition: 0.3s ease-in-out;
@@ -703,14 +875,15 @@ body {
   }
 
   .menu span {
-    color: #ffffff;
-    margin: 20px;
+    color: #000000;
+    margin: 15px;
     text-align: center;
+    font-size: 14px;
   }
 
   .menu span:nth-last-child(1) {
     background-color: rgba(245, 134, 52, 0);
-    color: #ffffff;
+    color: #000000;
     padding: 0;
   }
 
@@ -786,6 +959,10 @@ body {
     font-size: 16px;
   }
 
+  .card .description {
+    margin-top: 30px;
+  }
+
   .card .description h3 {
     font-size: 22px;
   }
@@ -834,6 +1011,51 @@ body {
   .main-content p {
     font-size: 12px;
   }
+
+  .subscribe {
+    margin-left: 5%;
+    margin-top: 140px;
+  }
+
+  .subs-title h1 {
+    font-size: 30px;
+  }
+
+  .subs-input input {
+    height: 50px;
+    padding-left: 20px;
+  }
+
+  .subs-input p {
+    font-size: 13px;
+    margin-left: -116px;
+    padding: 8px 22px;
+  }
+
+  .subs-input input::placeholder {
+    font-size: 10px;
+  }
+
+  .subscribe {
+    padding-top: 60px;
+  }
+
+  .subs-input {
+    padding-bottom: 60px;
+  }
+
+  footer {
+    margin-top: 120px;
+    padding: 25px 5%;
+  }
+
+  footer .title h5 {
+    font-size: 12px;
+  }
+
+  footer i:not(.bxl-twitter) {
+    margin-right: 6px;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -881,6 +1103,9 @@ body {
     padding: 7px;
     font-size: 15px;
     top: 28px;
+  }
+  .card .description {
+    margin-top: 25px;
   }
 
   .card .description h3 {
@@ -948,6 +1173,47 @@ body {
   .main-content p {
     font-size: 10px;
   }
+
+  .subscribe {
+    margin-top: 110px;
+    padding-top: 40px;
+  }
+
+  .subs-input {
+    margin-top: 30px;
+    padding-bottom: 40px;
+  }
+
+  .subs-title h1 {
+    font-size: 24px;
+  }
+
+  .subs-input input {
+    height: 40px;
+    padding-left: 15px;
+  }
+
+  .subs-input p {
+    font-size: 12px;
+    margin-left: -100px;
+    padding: 6px 16px;
+  }
+
+  .subs-input input::placeholder {
+    font-size: 9px;
+  }
+
+  footer {
+    margin-top: 80px;
+  }
+
+  footer i {
+    font-size: 20px;
+  }
+
+  footer i:not(.bxl-twitter) {
+    margin-right: 4px;
+  }
 }
 
 @media screen and (max-width: 576px) {
@@ -960,79 +1226,87 @@ body {
     line-height: 14px;
   }
 
+  .card .drop-down > * {
+    margin-left: 10px;
+  }
+
   .card .drop-down > * > h4 {
-    font-size: 10.5px;
+    font-size: 8.5px;
   }
 
   .card .drop-down > * > p {
-    font-size: 10.5px;
+    font-size: 8.5px;
   }
 
   .card .src-btn {
-    font-size: 10.5px;
+    font-size: 8px;
+    padding: 10px 20px;
+    margin-right: 10px;
   }
 
-  .card .src-btn {
-    padding: 10px 17px;
+  .sale-house .title {
+    margin-bottom: -10px;
   }
 
   .sale-house .title-left h1 {
-    font-size: 24px;
+    font-size: 18px;
   }
 
   .sale-house .title-left h4 {
-    font-size: 12px;
-    margin: 0 6px;
+    font-size: 8px;
+    margin: 0 4px;
   }
 
   .sale-house .title-right h4,
   .tr-right h4,
   .blog .title-blog .tb-right > h4 {
-    font-size: 12px;
+    font-size: 10px;
   }
 
   .card .image-title span {
-    font-size: 10px;
+    font-size: 9px;
     padding: 3px 10px;
   }
 
   .card .image-title i {
-    padding: 7px;
-    font-size: 12px;
+    padding: 5px;
+    font-size: 10px;
     right: 5px;
     top: 25px;
   }
 
   .card .description {
-    height: 90px;
-    margin-top: 17px;
+    line-height: 10px;
+    margin-top: 15px;
   }
 
   .card .description h3 {
-    font-size: 16px;
-    margin-bottom: 0;
+    font-size: 13px;
   }
 
   .card .description p:nth-of-type(1) {
-    font-size: 10px;
+    font-size: 9px;
   }
 
   .card .description p:last-child {
-    font-size: 14px;
-    margin-top: 0;
+    font-size: 12px;
   }
 
   .tr-left h1,
   .blog .title-blog .tb-left > h1 {
-    font-size: 20px;
+    font-size: 15px;
+  }
+
+  .title-review {
+    margin-bottom: -10px;
   }
 
   .image .image-name {
-    padding: 3px 10px;
+    padding: 4px;
   }
 
   .image-name h6 {
-    font-size: 10px;
+    font-size: 8px;
   }
 
   .people-review .people-description {
@@ -1053,12 +1327,16 @@ body {
     width: 95px;
   }
 
+  .title-blog {
+    margin-bottom: 15px;
+  }
+
   .main-profile .info-profile h6 {
     font-size: 8px;
   }
 
   .main-profile .info-profile p {
-    font-size: 6;
+    font-size: 6px;
   }
 
   .other-content .title-content h4 {
@@ -1079,6 +1357,35 @@ body {
   }
 
   .main-content p {
+    font-size: 8px;
+  }
+
+  .subscribe {
+    margin-top: 90px;
+    padding-top: 20px;
+  }
+
+  .subs-input {
+    margin-top: 10px;
+    padding-bottom: 20px;
+  }
+
+  .subs-title h1 {
+    font-size: 16px;
+  }
+
+  .subs-input input {
+    height: 30px;
+    padding-left: 10px;
+  }
+
+  .subs-input p {
+    font-size: 8px;
+    margin-left: -65px;
+    padding: 3px 10px;
+  }
+
+  .subs-input input::placeholder {
     font-size: 8px;
   }
 }
